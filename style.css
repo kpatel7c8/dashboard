@@ -36,7 +36,7 @@ nav {
 }
 
 ul {
-  margin: 40px -1.7rem;
+  margin: 15px -1.7rem;
 }
 
 li {
@@ -50,6 +50,7 @@ li {
 }
 
 header {
+  box-sizing: border-box;
   background-color: white;
   grid-row: 1 / 2;
   grid-column: 2 / 3;
@@ -92,7 +93,7 @@ input {
   align-items: center;
 }
 
-#hiUser p, h4 {
+#hiUser p, #hiUser h4 {
   margin:0.2rem;
   margin-left: -0.5rem;
 }
@@ -116,20 +117,39 @@ main {
   grid-row: 2 / 3;
   grid-column: 2 / 3;
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 75% 1fr;
+  grid-template-rows: 82vh;
+  grid-template-columns: 72% 1fr;
   box-shadow: 0 -3px #D5DBDB;
+  padding: 0 20px;
 }
-/*
+
 #articleContainer {
+  box-sizing: border-box;
+  height: fit-content;
   display: grid;
   grid-row: 1 / 2;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 140px);
   grid-template-columns: repeat(2, 1fr);
-  border: 1px solid tomato;
+  gap: 17px 20px;
+  margin-top: -10px;
 }
 
 #articleContainer article {
   display: grid;
-  border: 1px solid red;
-} */
+  grid-template-rows: 20px 1fr;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: -5px 0 #f1b32b, 3px 3px #D5DBDB;
+}
+
+article h4 {
+  margin-top: 0px;
+}
+
+article p {
+  margin-top: 0;
+  color: gray;
+  font-size: small;
+}
