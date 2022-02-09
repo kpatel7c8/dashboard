@@ -1,5 +1,3 @@
-/* font-family: 'Chewy', cursive; */
-
 html {
   background-color: black;
 }
@@ -93,6 +91,10 @@ input {
   align-items: center;
 }
 
+[class*= "astronaut"] {
+  color: rgb(37, 150, 190);
+}
+
 #hiUser p, #hiUser h4 {
   margin:0.2rem;
   margin-left: -0.5rem;
@@ -146,6 +148,7 @@ main {
 
 article h4 {
   margin-top: 0px;
+  opacity: 70%;
 }
 
 article p {
@@ -153,3 +156,14 @@ article p {
   color: gray;
   font-size: small;
 }
+
+.articleActions  {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: end;
+  gap: 10px;
+  padding-right: 10px;
+  color: black;
+  opacity: 20%;
+}
+
