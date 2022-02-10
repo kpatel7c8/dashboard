@@ -6,7 +6,7 @@ body {
   box-sizing: border-box;
   margin: 0 auto;
   display: grid;
-  width: 68vw;
+  width: 100vw;
   height: 100vh;
   grid-template: min(10rem, 18vh) 1fr / min(12rem, 20vw) 1fr;
   font-family: 'Ubuntu', sans-serif;
@@ -34,7 +34,7 @@ nav {
 }
 
 ul {
-  margin: 15px -1.7rem;
+  margin: 1rem -1.7rem;
 }
 
 li {
@@ -57,13 +57,13 @@ header {
 }
 
 #headerTop {
-  margin: 15px 30px;
+  margin: 1rem 2rem;
   grid-row: 1 / 2;
   display: grid;
-  grid-template-columns: 70% max-content max-content max-content;
+  grid-template-columns: 85% max-content max-content max-content;
   align-items: center;
   justify-items: center;
-  gap: 20px;
+  gap: 1.2rem;
   font-size: .8rem;
 }
 
@@ -76,15 +76,15 @@ input {
   background-color: rgba(225,232,240,255);
   width: 27vw;
   height: 1.1rem;
-  border-radius: 40px;
+  border-radius: 2.5rem;
   border: none;
-  margin-left: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-left: .33rem;
+  padding-left: .8rem;
+  padding-right: .8rem;
 }
 
 #headerBottom {
-  margin: 15px 30px;
+  margin: 1rem 2rem;
   grid-row: 2 / 3;
   display: grid;
   grid-template-columns: 10% 50% 1fr 1fr 1fr;
@@ -97,20 +97,21 @@ input {
 
 #hiUser p, #hiUser h4 {
   margin:0.2rem;
-  margin-left: -0.5rem;
+  margin-left: -3rem;
 }
 
 #hiUser p {
-  font-size: .6rem;
+  font-size: .8rem;
   font-weight:900;
+  font-weight: 100;
 }
 
 #headerBottom button {
   background-color: rgb(37, 150, 190);
   color: white;
   margin: 0.5rem;
-  padding: 5px;
-  border-radius: 40px;
+  padding: .33rem;
+  border-radius: 2.5rem;
   border: none;
 }
 
@@ -120,9 +121,10 @@ main {
   grid-column: 2 / 3;
   display: grid;
   grid-template-rows: 82vh;
-  grid-template-columns: 72% 1fr;
+  grid-template-columns: 80% 1fr;
   box-shadow: 0 -3px #D5DBDB;
-  padding: 0 20px;
+  padding: 0 1.2rem;
+  gap: 1rem 1.2rem;
 }
 
 #articleContainer {
@@ -130,24 +132,24 @@ main {
   height: fit-content;
   display: grid;
   grid-row: 1 / 2;
-  grid-template-rows: repeat(3, 140px);
+  grid-template-rows: repeat(3, 8rem);
   grid-template-columns: repeat(2, 1fr);
-  gap: 17px 20px;
-  margin-top: -10px;
+  gap: 1rem 1.2rem;
+  margin-top: -.8rem;
 }
 
 #articleContainer article {
   display: grid;
-  grid-template-rows: 20px 1fr;
-  padding: 10px;
+  grid-template-rows: 1.2rem 1fr;
+  padding: 0.8rem;
   background-color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.33rem;
   box-shadow: -5px 0 #f1b32b, 3px 3px #D5DBDB;
 }
 
 article h4 {
-  margin-top: 0px;
+  margin-top: 0;
   opacity: 70%;
 }
 
@@ -161,9 +163,91 @@ article p {
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-content: end;
-  gap: 10px;
-  padding-right: 10px;
+  gap: 0.8rem;
+  padding-right: 0.8rem;
   color: black;
   opacity: 20%;
 }
 
+aside {
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+}
+
+#announcementsContainer {
+  box-sizing: border-box;
+  height: fit-content;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  margin-top: -0.8rem;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px #D5DBDB;
+  padding: 0.33rem 1rem;
+  text-align: start;
+}
+
+#announcementsContainer article {
+  font-size: x-small;
+  border-bottom: 1px solid #D5DBDB;
+  justify-content: left;
+}
+
+#announcementsContainer article:last-child {
+  font-size: x-small;
+  border-bottom: none;
+  justify-content: left;
+}
+
+#announcementsContainer p, #trendingContainer p {
+  font-size: x-small;
+  margin-top: -0.8rem;
+}
+
+#announcementsContainer h5, #trendingContainer h5 {
+  font-size: x-small;
+  margin-top: 0.8rem;
+}
+
+.trendingAvatar {
+  display: grid;
+  grid-template: 3rem 1fr / 3rem 1fr;
+}
+
+#trendingContainer {
+  box-sizing: border-box;
+  height: fit-content;
+  display: grid;
+  grid-template-rows: repeat(3, 3rem);
+  margin-top: -0.8rem;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px #D5DBDB;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.trendingAvatar .fa-2xl {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  margin-top: 22px;
+  color: rgb(37, 150, 190);
+}
+
+.trendingAvatar .trendingName {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  align-self: center;
+  justify-self: start;
+}
+
+.trendingAvatar .trendingTitle {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  color: gray;
+  justify-self: start;
+  position: relative;
+  top: -15px;
+}
