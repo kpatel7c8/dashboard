@@ -1,5 +1,5 @@
 # dashboard
-A dashboard project
+A dashboard sample made using CSS grid (for widescreen only).
 
 
 
