@@ -1,5 +1,7 @@
 # dashboard
-A dashboard sample made using CSS grid (for widescreen only).
+## Link: https://kpatel7c8.github.io/dashboard/
+
+A dashboard GUI made using CSS grid.
 
 
 
