@@ -1,5 +1,5 @@
 # dashboard
-## Link: https://kpatel7c8.github.io/dashboard/
+## Link: https://lil-white-shadow.github.io/dashboard/
 
 A dashboard mockup made using CSS grid.
 
