@@ -8,7 +8,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Ubuntu:ital,wght@0,500;0,700;1,700&display=swap');
    </style>
-  <script src="https://kit.fontawesome.com/9489dbbdc4.js" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
   <title>My Dashboard</title>
   <link rel="icon" type="image/x-icon" href="img/lighthouse.png">
 </head>
@@ -16,157 +16,203 @@
   <nav>
     <div id="logo">
       <img src="img/lighthouse.png" alt="logo">
-      <span>Dashboard</span>
+      <span class="navText">LightHouse</span>
     </div>
     <ul>
-      <li><i class="fa-solid fa-house"></i>Home</li>
-      <li><i class="fa-solid fa-address-card"></i>Profile</li>
-      <li><i class="fa-solid fa-comments"></i>Messages</li>
-      <li><i class="fa-solid fa-clock-rotate-left"></i>History</li>
-      <li><i class="fa-solid fa-check"></i>Tasks</li>
-      <li><i class="fa-solid fa-user-group"></i>Communities</li>
+      <li>
+        <i class="fa-solid fa-house"></i>
+        <div class="navText">Home</div>
+      </li>
+      <li>
+        <i class="fa-solid fa-address-card"></i>
+        <div class="navText">Profile</div>
+      </li>
+      <li>
+        <i class="fa-solid fa-comments"></i>
+        <div class="navText">Messages</div>
+      </li>
+      <li>
+        <i class="fa-solid fa-clock-rotate-left"></i>
+        <div class="navText">History</div>
+      </li>
+      <li>
+        <i class="fa-solid fa-check"></i>
+        <div class="navText">Tasks</div>
+      </li>
+      <li>
+        <i class="fa-solid fa-user-group"></i>
+        <div class="navText">Communities</div>
+      </li>
     </ul>
     <ul>
-      <li><i class="fa-solid fa-gear"></i>Settings</li>
-      <li><i class="fa-solid fa-circle-info"></i>Support</li>
-      <li><i class="fa-solid fa-shield"></i>Privacy</li>
+      <li>
+        <i class="fa-solid fa-gear"></i>
+        <div class="navText">Settings</div>
+      </li>
+      <li>
+        <i class="fa-solid fa-circle-info"></i>
+        <div class="navText">Support</div>
+      </li>
+      <li>
+        <i class="fa-solid fa-shield"></i>
+        <div class="navText">Privacy</div>
+      </li>
     </ul>
   </nav>
-  <header>
-    <div id="headerTop">
-      <div id="search">
-        <i class="fa-solid fa-magnifying-glass fa-xs"></i>
-        <input type="text">
-      </div>
-      <i class="fa-solid fa-bell fa-sm"></i>
-      <i class="fa-solid fa-user-astronaut fa-xl"></i>
-      <div>Jane Doe</div>
-    </div>
-    <div id="headerBottom">
-      <i class="fa-solid fa-user-astronaut fa-3x"></i>
-      <div id="hiUser">
-        <p>Hi there,</p>
-        <h4>Jane Doe (@jdoe123)</h4>
-      </div>
-      <button>New</button>
-      <button>Upload</button>
-      <button>Share</button>
-    </div>
-  </header>
-  <main>
-    <section>
-      <p>My Projects</p>
-      <div id="articleContainer">
-     <article>
-        <h4>Lorem</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tenetur nulla mollitia officia aliquam corrupti, soluta laudantium harum?
-        </p>
-        <div class="articleActions">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-eye"></i>
-          <i class="fa-solid fa-share-nodes"></i>
+  <div class="contentContainer">
+    <header>
+      <div id="headerTop">
+        <div id="search">
+          <i class="fa-solid fa-magnifying-glass fa-xs"></i>
+          <input type="text">
         </div>
-      </article>
-      <article>
-        <h4>Ipsum</h4>
-        <p>
-          Facilis commodi reprehenderit temporibus eligendi, similique exercitationem dolores delectus provident? Voluptate, cumque distinctio!
-        </p>
-        <div class="articleActions">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-eye"></i>
-          <i class="fa-solid fa-share-nodes"></i>
-        </div>
-      </article>
-      <article>
-        <h4>Dolor sit</h4>
-        <p>
-         Non fugiat fuga itaque similique soluta repellat, rerum nesciunt, quos tenetur porro perspiciatis inventore doloribus nulla ipsam.
-        </p>
-        <div class="articleActions">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-eye"></i>
-          <i class="fa-solid fa-share-nodes"></i>
-        </div>
-      </article>
-      <article>
-        <h4>Amet</h4>
-        <p>
-          Magnam sint, molestias libero hic asperiores praesentium cum vitae, voluptates nihil ipsa labore cumque.
-        </p>
-        <div class="articleActions">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-eye"></i>
-          <i class="fa-solid fa-share-nodes"></i>
-        </div>
-      </article>
-      <article>
-        <h4>Consectetur</h4>
-        <p>
-          Debitis, est reprehenderit dolorum ipsa nostrum omnis, molestias unde vel.
-        </p>
-        <div class="articleActions">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-eye"></i>
-          <i class="fa-solid fa-share-nodes"></i>
-        </div>
-      </article>
-      <article>
-        <h4>Elit</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-        <div class="articleActions">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-eye"></i>
-          <i class="fa-solid fa-share-nodes"></i>
-        </div>
-      </article>
-      </div>
-    </section>
-    <aside>
-      <p>Announcements</p>
-      <div id="announcementsContainer">
-        <article>
-          <h5>Site Maintenance</h5>
-          <p>
-            Weekly maintenance is scheduled every Sunday from 2:00 - 3:00 am ET.
-          </p>
-        </article>
-        <article>
-          <h5>Community Share Day</h5>
-          <p>
-            Join this Saturday February 12th at 4pm for our 6th Annual Community Share Day.
-          </p>
-        </article>
-        <article>
-          <h5>Updated Privacy Policy</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur.
-          </p>
-        </article>
-      </div>
-      <p>Trending</p>
-      <div id="trendingContainer">
-        <div class="trendingAvatar">
-          <div class="avatarLogo"></div>
-          <i class="fa-solid fa-baby fa-2xl"></i>
-          <p class="trendingName">@bossBaby</p>
-          <p class="trendingTitle">CEO</p>
-        </div>
-        <div class="trendingAvatar">
-          <i class="fa-solid fa-user-ninja fa-2xl"></i>
-          <p class="trendingName">@raphael</p>
-          <p class="trendingTitle">Chief Ninja</p>
-        </div>
-        <div class="trendingAvatar">
-          <i class="fa-solid fa-user-tie fa-2xl"></i>
-          <p class="trendingName">@jetSki2</p>
-          <p class="trendingTitle">Mr. Manager</p>
+        <div class="headerTopRight">
+          <i class="fa-solid fa-bell fa-sm"></i>
+          <i class="fa-solid fa-user-astronaut fa-xl"></i>
+          <div>Jane Doe</div>
         </div>
       </div>
-    </aside>
-  </main>
+      <div id="headerBottom">
+        <div class="userInfo">
+          <i class="fa-solid fa-user-astronaut fa-3x"></i>
+          <div id="hiUser">
+            <p>Hi there,</p>
+            <h4>Jane Doe (@jdoe123)</h4>
+          </div>
+        </div>
+        <div class="buttonContainer">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h1>My Projects</h1>
+        <div id="articleContainer">
+          <article>
+            <h4>Lorem</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tenetur nulla mollitia officia aliquam corrupti, soluta laudantium harum?
+            </p>
+            <div class="articleActions">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-eye"></i>
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+          </article>
+          <article>
+            <h4>Ipsum</h4>
+            <p>
+              Facilis commodi reprehenderit temporibus eligendi, similique exercitationem dolores delectus provident? Voluptate, cumque distinctio!
+            </p>
+            <div class="articleActions">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-eye"></i>
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+          </article>
+          <article>
+            <h4>Dolor sit</h4>
+            <p>
+              Non fugiat fuga itaque similique soluta repellat, rerum nesciunt, quos tenetur porro perspiciatis inventore doloribus nulla ipsam.
+            </p>
+            <div class="articleActions">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-eye"></i>
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+          </article>
+          <article>
+            <h4>Amet</h4>
+            <p>
+              Magnam sint, molestias libero hic asperiores praesentium cum vitae, voluptates nihil ipsa labore cumque.
+            </p>
+            <div class="articleActions">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-eye"></i>
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+          </article>
+          <article>
+            <h4>Consectetur</h4>
+            <p>
+              Debitis, est reprehenderit dolorum ipsa nostrum omnis, molestias unde vel.
+            </p>
+            <div class="articleActions">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-eye"></i>
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+          </article>
+          <article>
+            <h4>Elit</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="articleActions">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-eye"></i>
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+          </article>
+        </div>
+      </section>
+      <aside>
+        <div>
+          <h1>Announcements</h1>
+          <div id="announcementsContainer">
+            <article>
+              <h4>Site Maintenance</h4>
+              <p>
+                Weekly maintenance is scheduled every Sunday from 2:00 - 3:00 am ET.
+              </p>
+            </article>
+            <article>
+              <h4>Community Share Day</h4>
+              <p>
+                Join this Saturday February 12th at 4pm for our 6th Annual Community Share Day.
+              </p>
+            </article>
+            <article>
+              <h4>Updated Privacy Policy</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div>
+          <h1>Trending</h1>
+          <div id="trendingContainer">
+            <div class="trendingAvatar">
+              <div class="avatarLogo"></div>
+              <i class="fa-solid fa-baby fa-2xl"></i>
+              <div>
+                <p class="trendingName">@bossBaby</p>
+                <p class="trendingTitle">CEO</p>
+              </div>
+            </div>
+            <div class="trendingAvatar">
+              <i class="fa-solid fa-user-ninja fa-2xl"></i>
+              <div>
+                <p class="trendingName">@raphael</p>
+                <p class="trendingTitle">Chief Ninja</p>
+              </div>
+            </div>
+            <div class="trendingAvatar">
+              <i class="fa-solid fa-user-tie fa-2xl"></i>
+              <div>
+                <p class="trendingName">@jetSki2</p>
+                <p class="trendingTitle">Mr. Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+  <script defer src="https://kit.fontawesome.com/9489dbbdc4.js" crossorigin="anonymous"></script>
 </body>
 </html>
