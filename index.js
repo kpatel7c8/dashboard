@@ -11,6 +11,11 @@ function toggleMobileNav() {
   
   if(window.innerWidth < 970) {
     
+    nav.style.width = '65px';
+    for (let i = 0; i < navText.length; i++) {
+      navText[i].style.display = 'none';
+    }
+    
     let widthOfMain = getComputedStyle(main).width.substring(0, getComputedStyle(main).width.indexOf('px'));
 
     nav.addEventListener('click',() => {
