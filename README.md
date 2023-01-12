@@ -2,7 +2,7 @@
 
 A responsive UI design for a dashboard made with vanilla css and javascript including a custom made nav section toggle behavior for smaller screen sizes.
 
-## Link: https://lil-white-shadow.github.io/dashboard/
+## Link: https://lil-white-shadow.github.io/LightHouse-dashboard/
 
 ## Images & Clips
 
